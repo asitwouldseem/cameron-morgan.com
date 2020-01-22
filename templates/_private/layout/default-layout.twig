@@ -1,0 +1,24 @@
+{% extends '_private/layout/base_html' %}
+
+{% block layout %}
+
+    <nav class="skip-links">
+        <a href="#main">Skip to content</a>
+    </nav>
+
+    <header class="header">
+
+    </header>
+
+    <main id="main" class="main">
+        {% block content %}
+            <p><code>{% verbatim %}{% block content %}…{% endblock %}{% endverbatim %}</code> is not set.</p>
+            <p>More information on Twig's <a href="https://symfony.com/doc/3.4/templating/inheritance.html">docs</a>.</p>
+        {% endblock %}
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+
+{% endblock layout %}

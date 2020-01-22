@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ craft.app.language }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}</title>
+
+    <link rel="author" href="/humans.txt">
+    <link rel="canonical" href="{{ craft.app.request.absoluteUrl }}">
+
+    {% block headLinks %}
+        <link rel="stylesheet" href="{{ rev('css/main.css') }}">
+    {% endblock headLinks %}
+</head>
+
+<body itemscope itemtype="https://schema.org/WebPage">
+
+    {% block layout %}
+        <p><code>{% verbatim %}{% block layout %}…{% endblock %}{% endverbatim %}</code> is not set.</p>
+        <p>More information on Twig's <a href="https://symfony.com/doc/3.4/templating/inheritance.html">docs</a>.</p>
+    {% endblock %}
+
+    <script async src="{{ rev('js/app.js') }}"></script>
+</body>
+</html>

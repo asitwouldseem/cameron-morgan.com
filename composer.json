@@ -3,7 +3,11 @@
   "description": "Personal website for Cameron Morgan",
   "type": "project",
   "require": {
+    "clubstudioltd/craft-asset-rev": "6.0.2",
     "craftcms/cms": "^3.0.0",
+    "craftcms/mailgun": "1.4.2",
+    "doublesecretagency/craft-siteswitcher": "2.1.0",
+    "nystudio107/craft-typogrify": "1.1.18",
     "vlucas/phpdotenv": "^3.4.0"
   },
   "autoload": {
