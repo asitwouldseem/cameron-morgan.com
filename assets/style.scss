@@ -1,0 +1,24 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+/**
+ *
+ * Author: Cameron Morgan
+ * Author URI: https://cameron-morgan.com/
+ * Description: Personal website for Cameron Morgan.
+ * Version: 1.0
+ * License: All rights reserved
+ *
+ */
+
+@import 'utils/variables',
+        'utils/mixins',
+        'utils/resets';
+
+@import 'base/reset',
+        'base/base',
+        'base/a11y',
+        'base/typography';
+
+@import 'layout/navigation';

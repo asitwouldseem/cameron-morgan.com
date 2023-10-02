@@ -1,0 +1,25 @@
+/*------------------------------------*\
+  # NAVIGATION
+\*------------------------------------*/
+
+.navbar {
+  @include reset-list;
+}
+
+.navbar__link {
+  text-decoration: none;
+}
+
+.navbar__item {
+  @include for-size('tablet') {
+    display: inline;
+  }
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}

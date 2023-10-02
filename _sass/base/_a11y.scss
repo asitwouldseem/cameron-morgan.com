@@ -1,0 +1,35 @@
+/*------------------------------------*\
+  # A11Y
+\*------------------------------------*/
+
+.sr-only {
+  position: absolute !important;
+  left: -999rem;
+}
+
+.skip-links a {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  opacity: 0;
+  padding: 0.5rem;
+  text-decoration: none; 
+  pointer-events: none;
+  background-color: var(--site__txt-color);
+  color: var(--site__bg-color);
+  left: 0;
+
+  &:focus {
+    opacity: 1;
+    pointer-events: all;
+    outline: none;
+  }
+}
+
+input,
+input[type=submit],
+a, {
+  &:focus {
+    outline: var(--site__txt-color) dotted medium;
+  }
+}

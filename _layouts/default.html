@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ page.title }} | {{ site.title }}</title>
+
+  <link rel="icon" href="{{ "/favicon.ico" | relative_url }}" sizes="48x48">
+  <link rel="icon" href="{{ "/favicon.svg" | relative_url }}" sizes="any" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="{{ "/apple-touch-icon.png" | relative_url }}">
+  <link rel="manifest" href="{{ "/site.webmanifest" | relative_url }}">
+
+  <link rel="author" href="{{ "/humans.txt" | relative_url }}">
+  <link rel="alternate" href="{{ "/feed.xml" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/style.css" | relative_url }}">
+</head>
+
+<body itemscope itemtype="https://schema.org/WebPage">
+  <nav class="skip-links">
+    <a href="#main">Skip to content</a>
+  </nav>
+
+  <div class="site">
+    <header class="site-header">
+      <div class="sticky">
+        <div class="sticky__wordmark">
+          <a href="#">
+            Cameron Morgan
+          </a>
+        </div>
+  
+        <nav itemscope itemtype="https://schema.org/SiteNavigationElement">
+          <ul class="sticky__navbar navbar">
+            <li class="navbar__item">
+              <a class="navbar__link" href="#" itemprop="url">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#" itemprop="url">Now</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#" itemprop="url">Articles</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#" itemprop="url">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" itemscope itemprop="mainContentOfPage">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <small class="copyright">
+        &copy; <span itemprop="copyrightYear">{{ site.time | date: '%Y' }}</span>
+
+        <span itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
+          <span itemprop="name">{{ site.title }}</span>
+        </span>
+      </small>
+    </footer>
+  </div> 
+
+  <script src="{{ "/assets/app.js" | relative_url }}"></script>
+</body>
+
+</html>

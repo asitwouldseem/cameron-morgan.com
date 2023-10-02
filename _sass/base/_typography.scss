@@ -1,0 +1,61 @@
+/*------------------------------------*\
+  # TYPOGRAPHY
+\*------------------------------------*/
+
+@font-face {
+  font-family: 'Cabin';
+  src: url('/assets/woff/cabin.var.ttf') format('woff2-variations');
+  src: url('/assets/woff/cabin.woff2') format('woff2'),
+      url('/assets/woff/cabin.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cabin';
+  src: url('/assets/woff/cabin.var.ttf') format('woff2-variations');
+  src: url('/assets/woff/cabin-bold.woff2') format('woff2'),
+      url('/assets/woff/cabin-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cabin';
+  src: url('/assets/woff/cabin-italic.var.ttf') format('woff2-variations');
+  src: url('/assets/woff/cabin-italic.woff2') format('woff2'),
+      url('/assets/woff/cabin-italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+body {
+  font-family: $font-family;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga" 1;
+
+  @supports (font-variant-ligatures: discretionary-ligatures) {
+    font-feature-settings: normal;
+    font-variant-ligatures: discretionary-ligatures;
+  }
+
+  // Massive thanks to CSS Tricks for this!
+  @include fluid-type($min-width, $max-width, $base_font-size, $max_font-size);
+}
+
+a {
+  color: site-color('shale');
+
+  &:hover,
+  &:active {
+    color: site-color('midnight');
+  }
+
+  &:visited {
+    font-style: italic;
+    font-variation-settings: 'ital' 1;
+  }
+}
