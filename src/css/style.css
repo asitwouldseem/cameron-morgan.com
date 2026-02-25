@@ -2,8 +2,8 @@
 
 @font-face {
     font-family: 'Commissioner';
-    src: url('/fonts/static/Commissioner-ExtraBold.woff2') format('woff2'),
-        url('/fonts/static/Commissioner-ExtraBold.woff') format('woff');
+    src: url('/fonts/Commissioner-ExtraBold.woff2') format('woff2'),
+        url('/fonts/Commissioner-ExtraBold.woff') format('woff');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
@@ -11,8 +11,8 @@
 
 @font-face {
     font-family: 'Commissioner';
-    src: url('/fonts/static/Commissioner-SemiBold.woff2') format('woff2'),
-        url('/fonts/static/Commissioner-SemiBold.woff') format('woff');
+    src: url('/fonts/Commissioner-SemiBold.woff2') format('woff2'),
+        url('/fonts/Commissioner-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -20,8 +20,8 @@
 
 @font-face {
     font-family: 'Commissioner';
-    src: url('/fonts/static/Commissioner-Thin.woff2') format('woff2'),
-        url('/fonts/static/Commissioner-Thin.woff') format('woff');
+    src: url('/fonts/Commissioner-Thin.woff2') format('woff2'),
+        url('/fonts/Commissioner-Thin.woff') format('woff');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
