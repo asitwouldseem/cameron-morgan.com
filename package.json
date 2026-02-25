@@ -1,0 +1,21 @@
+{
+  "name": "cameron-morgan.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asitwouldseem/cameron-morgan.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/asitwouldseem/cameron-morgan.com/issues"
+  },
+  "homepage": "https://github.com/asitwouldseem/cameron-morgan.com#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}
