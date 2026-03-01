@@ -21,7 +21,7 @@ title: Heading
   <meta name="theme-color" content="#fff">
 </head>
 
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
 
 # {{ title }}
 
